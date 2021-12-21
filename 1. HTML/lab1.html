@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<style type="">
+	</style>
+</head>
+
+<body>
+
+<form>
+	<fieldset>
+  <legend>Form</legend>
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Joseph John" maxlength="25" required><br><br>
+  <label for="lname">email:</label><br>
+  <input type="text" id="email" name="email" value="test@example.com" autofocus required><br><br>
+  <label for="pwd">Password</label><br>
+  <input type="password" name="pwd" minlength="6" required><br><br>
+
+  <label for="category">Category: </label>
+  <select name="category" id="category">
+  <option value="student">student</option>
+  <option value="employee">employee</option>
+  <option value="freelancer" selected>freelancer</option>
+  </select><br><br>
+
+  <label for="event_date">Event Date: </label>
+  <input type="date" name="event date" required><br><br>
+
+  <label for="tickets">Ticket count: </label>
+  <input type="radio" id="1t" name="ticket_count" value="1 ticket" required>
+  <label for="1t">1 ticket</label>
+  <input type="radio" id="2t" name="ticket_count" value="2 tickets" required checked>
+  <label for="2t">2 tickets</label>
+  <input type="radio" id="3t" name="ticket_count" value="3 tickets" required>
+  <label for="3t">3 tickets</label><br><br>
+
+  <input type="checkbox" id="payment" name="payment" value="Bike" required>
+  <label for="payment">Online Payment</label><br><br>
+
+  <label for="notes">Notes:</label><br>
+  <textarea name="message" rows="10" cols="50" placeholder="Write notes...">
+  </textarea>
+  <br><br>
+  <input type="submit" value="Submit">
+  </fieldset>
+</form> 
+
+</body>
+</html>
