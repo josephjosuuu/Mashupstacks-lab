@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ERC</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+	*{
+		margin: 0;
+		font-family: "Myriad Pro", myriad-pro, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	div.left{
+		background-color: #151823;
+		position: absolute;
+		width: 65%;
+		height: 100%;
+		right: 35%;
+		font-family: "Myriad Pro", myriad-pro, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		
+	}
+
+	div.right{
+		background-color: #01a874;
+		position: absolute;
+		right: 0;
+		width: 35%;
+		height: 100%;
+	}
+
+	.left img{
+		float: left;
+		width: 200px;
+		height: 58px;
+		margin-top:5vh;
+		margin-left: 5vw;
+	}
+
+	.left h1{
+		color: white;
+		margin-top: 35vh;
+		margin-left: 6vw;
+		font-size: 50px;
+		font-weight:lighter;
+	}
+
+	.left h3, p{
+		color: gray;
+		margin-left: 6vw;
+		margin-right: 7vw;
+		font-weight:lighter;
+	}
+
+	a.register{
+		margin-left: 6vw;
+		background-color: #01a874;
+		color: white;
+		border: 0;
+		border-radius: 	2px;
+		padding: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		text-decoration: none;
+		font-size: 12px;
+	}
+
+	a.navig{
+		color: gray;
+		font-size: 12px;
+		font-weight: lighter;
+		margin-right: 60px;
+
+	}
+
+	a {text-decoration: none;}
+
+	.left ul{
+		margin-left: 5vw;
+		margin-top: 17vh;
+		list-style-type: none;
+	}
+
+	li {
+  		display: inline-block;
+	}
+
+	.right h3{
+		color: #c2ccc5;
+		margin-top: 35vh;
+		margin-left: 6vw;
+		font-size: 30px;
+		font-weight:lighter;
+
+	}
+
+	.input_field{
+		border: 0;
+  		padding: 0;
+  		z-index: 1
+  		background-color: #01a874;
+  		border-bottom: 2px solid #eee;
+  		font: inherit;
+  		font-size: 14px;
+  		line-height: 30px;
+  		&:focus, &:valid ;
+    outline: 0;
+    border-bottom-color: #665856;
+    &+.input_label 
+      color: #665856;
+	}
+
+	.input{
+		display: flex;
+  		flex-direction: column-reverse;
+  		position: relative;
+  		padding-top: 10px;
+  & + .input
+    margin-top: 10px;
+	}
+
+	.input_label{
+		color: #8597a3;
+  		 position: absolute;
+       top: 20px;
+  
+	}
+  
+
+</style>
+</head>
+
+<body>
+	<div class="left">
+		<img src="https://cosy.erc.edu/assets/my-erc/img/logo-wh
+		ite.png" alt="ERC logo">
+
+		<h1>Welcome</h1><br>
+		<h3 style="font-size: 28px">Register for an ERC account here.</h3><br><br>
+		<p>Register for a free ERC account here and get access to the webshop, learning environment and membership portal.Register for a free ERC account here and get access to the webshop, learning environment and membership portal.Register for a free ERC account here and get access to the webshop, learning environment and membership portal.</p><br><br>
+
+		<a class="register" href="https://cosy.erc.edu/en/register" ><b>REGISTER HERE</b></a>
+		<br><br>
+
+		<ul>
+			<li>
+				<a class="navig" href="#"><b>CHOOSE LANGUAGE</b> ></a>
+			</li>
+		
+  			<li>
+  				<a class="navig" href="http://support.erc.edu/"><b>HELP CENTER</b></a>
+  			</li>
+
+  			<li>
+  				<a class="navig" href="http://erc.edu/"><b>ERC WEBSITE</b></a>
+  			</li> 
+
+  			<li>
+  				<a class="navig" href="https://cosy.erc.edu/en/webshop"><b>ERC WEBSHOP</b></a>
+  			</li>
+  		</ul>
+	</div>
+
+	<div class="right">
+		<h3>Or loggin to your account</h3><br>
+
+		<form class="card_form">
+            <div class="input">
+                <input type="text" class="input_field" required />
+                <label class="input_label">Your email</label>
+            </div>
+            <div class="input">
+                <input type="password" class="input_field" required />
+                <label class="input_label">Password</label>
+	</div>
+</body>
+</html>
