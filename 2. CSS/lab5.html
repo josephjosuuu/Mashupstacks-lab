@@ -85,7 +85,7 @@
 	}
 
 	.right h3{
-		color: #c2ccc5;
+		color: #e9ebf0;
 		margin-top: 35vh;
 		margin-left: 6vw;
 		font-size: 30px;
@@ -96,35 +96,42 @@
 	.input_field{
 		border: 0;
   		padding: 0;
-  		z-index: 1
+  		z-index: 1;
   		background-color: #01a874;
   		border-bottom: 2px solid #eee;
   		font: inherit;
   		font-size: 14px;
   		line-height: 30px;
   		&:focus, &:valid ;
-    outline: 0;
-    border-bottom-color: #665856;
-    &+.input_label 
-      color: #665856;
+    	outline: 0;
+    	border-bottom-color: #c0c1c4;
+    	margin-left: 6vw;
+    	width: 300px;
 	}
 
-	.input{
-		display: flex;
-  		flex-direction: column-reverse;
-  		position: relative;
-  		padding-top: 10px;
-  & + .input
-    margin-top: 10px;
+	::placeholder {
+  		color: #c0c1c4;
+  		opacity: 1; 
 	}
 
-	.input_label{
-		color: #8597a3;
-  		 position: absolute;
-       top: 20px;
-  
+	.submit {
+		margin-left: 6vw;
 	}
-  
+
+	.submit input{
+		background-color: white;
+		margin-right: 2vw;
+		border: 0;
+		padding: 12px;
+		padding-left: 23px;
+		padding-right: 23px;
+		color: #01a874;
+		font-weight: bold;
+	}
+
+	.submit a{
+		color: #c0c1c4;
+	}
 
 </style>
 </head>
@@ -145,7 +152,7 @@
 			<li>
 				<a class="navig" href="#"><b>CHOOSE LANGUAGE</b> ></a>
 			</li>
-		
+
   			<li>
   				<a class="navig" href="http://support.erc.edu/"><b>HELP CENTER</b></a>
   			</li>
@@ -161,16 +168,18 @@
 	</div>
 
 	<div class="right">
-		<h3>Or loggin to your account</h3><br>
+		<h3>Or loggin to your account</h3><br><br>
 
-		<form class="card_form">
+		<form>
             <div class="input">
-                <input type="text" class="input_field" required />
-                <label class="input_label">Your email</label>
-            </div>
+                <input type="text" class="input_field" placeholder="Your email" required />
+            </div><br>
             <div class="input">
-                <input type="password" class="input_field" required />
-                <label class="input_label">Password</label>
-	</div>
+                <input type="password" class="input_field" placeholder="Password" required />
+			</div><br><br>
+			<div class="submit">
+				<input type="submit" value="LOGIN"> <a href="https://cosy.erc.edu/en/reset-password"> forgot password?</a>
+			</div>
+		</form>
 </body>
 </html>
